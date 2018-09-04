@@ -1,0 +1,15 @@
+k8s_local_storage_pv_names:
+  - pv1
+  - pv2
+  - pv3
+  - pv4
+  - pv5
+  - pv6
+  - pv7
+  - pv8
+  - pv9
+storage_class_name: local-storage
+local_volume_provisioner_enabled: true
+kube_proxy_nodeport_addresses: false
+stolon_superuser_password: queejoh0ADeet9aed5th
+stolon_replication_password: OoYah9Ahseiz6oomoovi
