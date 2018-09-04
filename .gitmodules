@@ -10,3 +10,6 @@
 [submodule "ansible/roles/k8s-stolon-cluster"]
 	path = ansible/roles/k8s-stolon-cluster
 	url = https://github.com/kofonfor/ansible-role-k8s-stolon-cluster.git
+[submodule "ansible/roles/k8s-grafana"]
+	path = ansible/roles/k8s-grafana
+	url = https://github.com/kofonfor/ansible-role-k8s-grafana.git

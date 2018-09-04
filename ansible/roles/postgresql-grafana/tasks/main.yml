@@ -1,0 +1,8 @@
+- name: install a python client
+  apt: name=python-psycopg2
+
+- name: create grafana PostgreSQL user
+  postgresql_user: name=grafana password={{ k8s_grafana_db_password }} port={{ stolon_proxy_nodeport }} login_host=127.0.0.1 login_user=stolon login_password={{ stolon_superuser_password }} db=postgres
+
+- name: create grafana DB
+  postgresql_db: name=grafana encoding="UTF-8" template=template0 owner=grafana port={{ stolon_proxy_nodeport }} login_host=127.0.0.1 login_user=stolon login_password={{ stolon_superuser_password }}
